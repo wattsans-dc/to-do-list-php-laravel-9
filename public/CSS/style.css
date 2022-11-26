@@ -1,0 +1,62 @@
+
+/*zone text débu*/
+
+.zone
+{
+    border: 3px solid;
+    width: 20cm;
+    height: 10cm;
+    border-color: black;
+    margin-top: 1cm;
+    
+}
+
+/*zone text fin*/
+
+/*bouton*/
+
+#bouton
+{
+    margin-left: 10cm;
+    border-color: black;
+    width:3cm;
+    font-size: 20px;
+    margin-top: 0.6cm;
+}
+
+
+
+#btn
+{
+    margin-left: 12cm;
+    border-color: black;
+    width:9cm;
+    height: 5cm;
+    font-size: 20px;
+    margin-top: 5cm;
+
+}
+
+/*bouton fin*/
+
+/*pour le text*/
+
+.titre 
+{
+    font-size: 20px;
+    margin-left: 9.99cm;    
+}
+
+
+.text
+{
+    margin-left: 3.99cm;
+    margin-top: 0.2cm;
+    border-color: black;
+    width:15cm;
+    height: 50px;
+    font-size: 20px;
+}
+
+/*fin*/
+
