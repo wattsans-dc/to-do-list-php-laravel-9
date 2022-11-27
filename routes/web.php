@@ -22,13 +22,15 @@ Route::get('/', function () {
 
 route::get('list',[TodolistController::class,'list']);
 
-route::get('delete/{id}', [TodolistController::class,'delete']);
+route::get('delete/{id}',[TodolistController::class,'delete']);
 
 route::view('add', 'list');
 
 route::POST('add',[TodolistController::class,'Addtodolist']);
 
-route::get('modifier/{id}', [TodolistController::class,'showdata']);
+route::get('edit/{id}',[TodolistController::class,'showdata']);
 
-route::post('/modifier', [TodolistController::class,'modifier']);
+route::POST('edit',[TodolistController::class,'edit']);
+
+
 

@@ -30,7 +30,7 @@
 
 <td>
 <a href={{"delete/".$todo['id'] }}> Supprimer</a>
-<a href={{"modifier/".$todo['id'] }}> Modifier</a> <br> <br>
+<a href={{ "edit/".$todo['id'] }}> Modifier</a> <br> <br>
 </td>
 </tr>
 @endforeach

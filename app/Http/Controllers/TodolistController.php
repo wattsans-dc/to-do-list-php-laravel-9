@@ -21,9 +21,15 @@ class TodolistController extends Controller
     }
 
     function Addtodolist(Request $req)
+
     {
+
         $data = new todolist;
         $data->tache=$req->tache;
+        $req->validate([
+
+            'tache'=>'required'
+            ]);
         $data->save();
         return redirect('list');
 
@@ -33,20 +39,29 @@ class TodolistController extends Controller
     {
 
         $data=todolist::find($id);
-        return view('modifier',['todolist'=>$data]);
+        return view('edit',['todolist'=>$data]);
 
 
     }
 
 
-    function modifier(Request $req)
+    function edit(Request $req)
     {
+        $req->validate([
+
+        'tache'=>'required'
+        ]);
 
         $data=todolist::find($req->id);
         $data->tache=$req->tache;
         $data->save();
-        return redirect('proglist');
-
+        return redirect('list');
     }
+    //
+
+
+
 }
+
+
 
